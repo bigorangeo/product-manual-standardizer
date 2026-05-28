@@ -16,6 +16,18 @@ description: Optimize and complete MSDS/SDS Word documents (.docx) into a clean 
 7. For routine formatting after the structure and bilingual content are present, run `scripts/optimize_msds_docx.py <input.docx> <output.docx>`.
 8. Open or inspect the output document and verify that table text remains visible, section order is intact, merged cells are not flattened, and the toxicity table is readable.
 
+## Template Fidelity Rule
+
+When the user provides or references a specific finished MSDS template, use that `.docx` as the base document whenever possible. Copy the template, then replace product-specific text and table values inside the existing paragraphs, headers, footers, and table cells. Do not rebuild the document from scratch unless the template is unusable.
+
+Before delivery, compare the output against the template:
+
+- header and footer text exist where the template has them
+- section count and order match
+- table count and table row/column dimensions match unless a source data difference requires a deliberate change
+- title/version/revision areas keep the same paragraph positions and alignment
+- composition and toxicity tables preserve the template's widths, merged cells, shading, and compact formatting
+
 ## Layout Rules
 
 - Use Letter page size with top 1.8 cm, bottom 1.25 cm, left/right 2.0 cm margins unless the user asks for A4.
