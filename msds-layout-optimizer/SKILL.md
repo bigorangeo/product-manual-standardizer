@@ -42,6 +42,7 @@ Before delivery, compare the output against the template:
 - Use tables for structured fields. Prefer two-column label/value tables for general MSDS sections.
 - Use a shaded header row for ingredient/composition tables and any dense multi-column hazard tables.
 - Treat toxicity tables as high-risk layout elements: use smaller text, centered headers, adequate cell margins, and check that LD50/LC50 data does not disappear or overlap.
+- In section 9, keep `外观及性状 / Appearance and properties` as a pure appearance description. Remove product model prefixes from that field, such as changing `FS7230-130 半透明至乳白色液体 / FS7230-130 translucent to milky white liquid` to `半透明至乳白色液体 / translucent to milky white liquid`.
 
 ## Using The Script
 

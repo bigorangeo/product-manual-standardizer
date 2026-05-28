@@ -46,3 +46,4 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 - Do not invent hazard classifications, CAS numbers, formulas, exposure limits, transport data, or regulatory statements.
 - Do not normalize `None`, `NA`, `--`, or blank values unless the user asks.
 - Do not change revision dates, version numbers, company names, or product identifiers unless the user provides replacement values.
+- In section 9, `外观及性状 / Appearance and properties` should describe only the physical appearance/state. Remove product model prefixes such as `FS7230-130` from this value in both Chinese and English; keep the product model only in product identification, header material number, or other explicit model fields.
