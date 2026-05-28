@@ -32,6 +32,7 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 - Header shading: pale blue `#D9EAF7`.
 - Header text: bold and centered.
 - Body cells: vertically centered; formula and CAS cells can use compact text to avoid wrapping damage.
+- Values must match the current source document exactly. Translate ingredient names, but do not change the source substance name or percentage range. For example, if the source says `水` and `60-70%`, use `水 Water` and `60-70%`; do not change it to `去离子水 Deionized water` or infer a different range.
 
 ## Toxicity Table
 

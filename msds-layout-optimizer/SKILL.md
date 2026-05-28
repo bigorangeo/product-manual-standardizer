@@ -41,6 +41,7 @@ Before delivery, compare the output against the template:
 - Format numbered section headings as bold blue bilingual headings, with visible spacing before and after.
 - Use tables for structured fields. Prefer two-column label/value tables for general MSDS sections.
 - Use a shaded header row for ingredient/composition tables and any dense multi-column hazard tables.
+- For section 2 composition tables, copy ingredient names, content ranges, formulas, and CAS numbers from the current source file exactly, then translate the ingredient names. Do not infer a balance percentage, rename `水` as `去离子水`, or reuse template percentages.
 - Treat toxicity tables as high-risk layout elements: use smaller text, centered headers, adequate cell margins, and check that LD50/LC50 data does not disappear or overlap.
 - In section 9, keep `外观及性状 / Appearance and properties` as a pure appearance description. Remove product model prefixes from that field, such as changing `FS7230-130 半透明至乳白色液体 / FS7230-130 translucent to milky white liquid` to `半透明至乳白色液体 / translucent to milky white liquid`.
 - In section 9, concrete numeric property rows should combine the Chinese and English label in one left cell and keep only the value in the right cell. Example: `蒸气压 Vapor pressure:` -> `< 21.07mmHg (23℃)` and `密度 Density:` -> `1.0-1.05g/cm3 (20℃)`. Do not create a separate English row for these numeric values.
