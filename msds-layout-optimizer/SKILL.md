@@ -31,6 +31,15 @@ Before delivery, compare the output against the template:
 - title/version/revision areas keep the same paragraph positions and alignment
 - composition and toxicity tables preserve the template's widths, merged cells, shading, and compact formatting
 
+## High-Risk Data Verification
+
+Sections 2 and 9 are high-risk data sections. Verify them against the current source file item by item before delivery, even if the layout already looks correct.
+
+- Section 2 `成分辨识资料 / Composition / Information on Ingredients`: check every ingredient name, content range, molecular formula, and CAS No. against the source. Only translate ingredient names. Never infer percentages, rename substances, reuse template values, or use a balancing calculation.
+- Section 9 `物理及化学性质 / Physical and Chemical Properties`: check every value against the source, including appearance, odor, vapor pressure, vapor density, boiling point, explosive limits, solubility, and density. Do not add product model prefixes to appearance. For concrete numeric values, keep Chinese-English labels in one left cell and the value only in the right cell.
+- If the source value is `无相关数据`, `NA`, `--`, blank, or otherwise missing, preserve that status and translate it consistently. Do not replace it with a template value.
+- When creating the final response, mention that sections 2 and 9 were specifically checked.
+
 ## Layout Rules
 
 - Use Letter page size with top 1.8 cm, bottom 1.25 cm, left/right 2.0 cm margins unless the user asks for A4.
@@ -80,6 +89,8 @@ Use manual `python-docx` edits after the script only for document-specific issue
 - Missing data is marked clearly instead of invented.
 - Tables stay inside page margins.
 - Ingredient tables retain CAS numbers, formulas, and percentages.
+- Section 2 composition data has been checked item by item against the source file.
+- Section 9 physical/chemical property values have been checked item by item against the source file.
 - Chinese-only source content has been converted into Chinese-English bilingual content, with original Chinese retained.
 - Toxicity tables keep LD50/LC50 values readable.
 - No provided safety statement or technical value is changed as a formatting side effect.

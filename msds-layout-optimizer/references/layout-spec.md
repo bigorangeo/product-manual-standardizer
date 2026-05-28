@@ -33,6 +33,7 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 - Header text: bold and centered.
 - Body cells: vertically centered; formula and CAS cells can use compact text to avoid wrapping damage.
 - Values must match the current source document exactly. Translate ingredient names, but do not change the source substance name or percentage range. For example, if the source says `水` and `60-70%`, use `水 Water` and `60-70%`; do not change it to `去离子水 Deionized water` or infer a different range.
+- This table must be audited row by row before delivery. Compare the output against the source for ingredient name, content, formula, and CAS No.; do not trust template values.
 
 ## Toxicity Table
 
@@ -49,3 +50,4 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 - Do not change revision dates, version numbers, company names, or product identifiers unless the user provides replacement values.
 - In section 9, `外观及性状 / Appearance and properties` should describe only the physical appearance/state. Remove product model prefixes such as `FS7230-130` from this value in both Chinese and English; keep the product model only in product identification, header material number, or other explicit model fields.
 - In section 9, numeric physical/chemical property fields with concrete values should use one row: put the Chinese and English label in the left cell, and put only the concrete value in the right cell. For example, use `蒸气压 Vapor pressure:` with `< 21.07mmHg (23℃)`, and `密度 Density:` with `1.0-1.05g/cm3 (20℃)`. Do not add a separate English row or duplicate the numeric value in English.
+- Section 9 must be audited value by value before delivery. Compare appearance, odor, vapor pressure, vapor density, boiling point, explosive limits, solubility, and density against the source. Do not trust template values.
