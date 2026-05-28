@@ -42,6 +42,8 @@ Sections 2 and 9 are high-risk data sections. Verify them against the current so
 
 ## Layout Rules
 
+- Set the MSDS version line to `版本Version ：2.3` for optimized outputs unless the user specifies another version.
+- If the source has no revision date, set the revision date to `修订日期Revision Date：03/2026` to indicate the March 2026 revision. Do not leave it as `未提供 / Not provided`.
 - Use Letter page size with top 1.8 cm, bottom 1.25 cm, left/right 2.0 cm margins unless the user asks for A4.
 - Keep the document bilingual and compact: Chinese and English labels may share lines or paired rows, but do not merge unrelated safety fields.
 - For incomplete MSDS inputs, add missing standard section headings and organize available content under the best matching section. Mark missing unknown data as `未提供 / Not provided` or `待确认 / To be confirmed`; do not invent safety values.
@@ -85,6 +87,7 @@ Use manual `python-docx` edits after the script only for document-specific issue
 ## Verification Checklist
 
 - Title, version, 16 numbered MSDS sections, technical contact block, disclaimer, and revision date are still present when provided.
+- Version is `2.3`, and missing source revision dates are normalized to `03/2026`.
 - Incomplete source files have been reorganized into the standard 16-section MSDS structure.
 - Missing data is marked clearly instead of invented.
 - Tables stay inside page margins.

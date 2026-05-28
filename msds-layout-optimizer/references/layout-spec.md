@@ -11,11 +11,11 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 ## Paragraph System
 
 - Main title: centered, 26 pt, Microsoft YaHei, no bold required, about 10 pt space after.
-- Version line: right aligned, 9 pt, tight line spacing around 1.05.
+- Version line: right aligned, 9 pt, tight line spacing around 1.05. Optimized outputs use `版本Version ：2.3` unless the user specifies another version.
 - Numbered section heading: matches `1.` through `16.`, bold, 18 pt, blue `#1F4E79`, about 12 pt space before and 8 pt after.
 - Subsection heading, such as `急性毒性 / Acute toxicity:`: bold, 10.5 pt, about 4 pt before and 2 pt after.
 - Closing company/contact and disclaimer text: compact body text, 10-10.5 pt, line spacing around 1.05.
-- Revision date: right aligned, 9 pt, muted gray.
+- Revision date: right aligned, 9 pt, muted gray. If the source has no revision date, use `修订日期Revision Date：03/2026`.
 
 ## Table System
 
@@ -47,7 +47,7 @@ Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table
 
 - Do not invent hazard classifications, CAS numbers, formulas, exposure limits, transport data, or regulatory statements.
 - Do not normalize `None`, `NA`, `--`, or blank values unless the user asks.
-- Do not change revision dates, version numbers, company names, or product identifiers unless the user provides replacement values.
+- Keep company names and product identifiers from the source. Normalize optimized MSDS version to `2.3`; when no source revision date is provided, use `03/2026`.
 - In section 9, `外观及性状 / Appearance and properties` should describe only the physical appearance/state. Remove product model prefixes such as `FS7230-130` from this value in both Chinese and English; keep the product model only in product identification, header material number, or other explicit model fields.
 - In section 9, numeric physical/chemical property fields with concrete values should use one row: put the Chinese and English label in the left cell, and put only the concrete value in the right cell. For example, use `蒸气压 Vapor pressure:` with `< 21.07mmHg (23℃)`, and `密度 Density:` with `1.0-1.05g/cm3 (20℃)`. Do not add a separate English row or duplicate the numeric value in English.
 - Section 9 must be audited value by value before delivery. Compare appearance, odor, vapor pressure, vapor density, boiling point, explosive limits, solubility, and density against the source. Do not trust template values.
