@@ -18,11 +18,14 @@ description: Optimize and complete MSDS/SDS Word documents (.docx) into a clean 
 
 ## Template Fidelity Rule
 
-When the user provides or references a specific finished MSDS template, use that `.docx` as the base document whenever possible. Copy the template, then replace product-specific text and table values inside the existing paragraphs, headers, footers, and table cells. Do not rebuild the document from scratch unless the template is unusable.
+When the user provides or references a specific finished MSDS template, reproduce the template formatting strictly while using and optimizing the current product's content. Do not copy irrelevant template product data into the new MSDS. Use the template as a formatting/layout reference or base document, but update the document with the current source content, translations, and structure decisions.
+
+If using the template as a base document, replace only the text that must change. Preserve non-text objects and structural runs, especially header logos, images, drawing runs, footer objects, table geometry, merged cells, shading, and page layout. Never overwrite an entire header paragraph if it contains a logo/image run; identify the text run containing the material number or other editable text and change only that run.
 
 Before delivery, compare the output against the template:
 
 - header and footer text exist where the template has them
+- header logos and image/drawing runs still exist where the template has them
 - section count and order match
 - table count and table row/column dimensions match unless a source data difference requires a deliberate change
 - title/version/revision areas keep the same paragraph positions and alignment
