@@ -1,0 +1,48 @@
+# MSDS Layout Reference
+
+Derived from `FS100-115M_MSDS_2.2_translation_layout_optimized_v4_toxicity_table.docx`.
+
+## Page
+
+- Size: Letter, 21.59 cm x 27.94 cm.
+- Margins: top 1.8 cm, bottom 1.25 cm, left 2.0 cm, right 2.0 cm.
+- Default body type: 10.5 pt, Arial for Latin text and Microsoft YaHei for Chinese text.
+
+## Paragraph System
+
+- Main title: centered, 26 pt, Microsoft YaHei, no bold required, about 10 pt space after.
+- Version line: right aligned, 9 pt, tight line spacing around 1.05.
+- Numbered section heading: matches `1.` through `16.`, bold, 18 pt, blue `#1F4E79`, about 12 pt space before and 8 pt after.
+- Subsection heading, such as `急性毒性 / Acute toxicity:`: bold, 10.5 pt, about 4 pt before and 2 pt after.
+- Closing company/contact and disclaimer text: compact body text, 10-10.5 pt, line spacing around 1.05.
+- Revision date: right aligned, 9 pt, muted gray.
+
+## Table System
+
+- General sections use two-column label/value tables.
+- Label cells should stay narrow enough to scan but wide enough for bilingual labels.
+- Body tables use compact paragraph spacing: 0 pt before/after, line spacing around 1.05.
+- Cell padding should be modest: about 0.08-0.12 cm left/right and 0.04-0.06 cm top/bottom.
+- Borders should be visible and light, typically gray `#BFBFBF`.
+- Dense multi-column tables use 8.5-9 pt text when needed.
+
+## Composition Table
+
+- Typical columns: `序号 No.`, `成分名称 Ingredient`, `含量 Content`, `分子式 Molecular formula`, `CAS No.`.
+- Header shading: pale blue `#D9EAF7`.
+- Header text: bold and centered.
+- Body cells: vertically centered; formula and CAS cells can use compact text to avoid wrapping damage.
+
+## Toxicity Table
+
+- Treat as the most fragile table.
+- Preserve merged cells and duplicated bilingual labels.
+- Prefer 8.5-9 pt text, vertical centering, and compact margins.
+- LD50/LC50 values must remain visible and not collapse into narrow columns.
+- If automatic formatting still causes overflow, manually adjust column widths or insert safe line breaks inside long values.
+
+## Content Integrity Rules
+
+- Do not invent hazard classifications, CAS numbers, formulas, exposure limits, transport data, or regulatory statements.
+- Do not normalize `None`, `NA`, `--`, or blank values unless the user asks.
+- Do not change revision dates, version numbers, company names, or product identifiers unless the user provides replacement values.

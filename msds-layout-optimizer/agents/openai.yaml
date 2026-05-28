@@ -1,0 +1,7 @@
+interface:
+  display_name: "MSDS Layout Optimizer"
+  short_description: "Complete and format MSDS Word files"
+  default_prompt: "Use $msds-layout-optimizer to complete an incomplete MSDS structure, translate Chinese content into bilingual Chinese-English text if needed, then optimize the Word document layout."
+
+policy:
+  allow_implicit_invocation: true
